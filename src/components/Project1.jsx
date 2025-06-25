@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import wanderlust from "../assets/wanderlust.jpg";
 import miniproject from "../assets/miniproject.png";
-import simongame from "../assets/simongame.jpg";
+// import simongame from "../assets/simongame.jpg";
 import spotify from "../assets/spotify.jpg";
 import powerBI from "../assets/powerBI.png";
+import servicenow from "../assets/servicenow.png";
 
 const Card = () => {
   const projects = [
@@ -23,18 +24,18 @@ const Card = () => {
       link: "https://github.com/KrishnaBabuLaveti/Student-Project-Management",
     },
     {
-      title: "Simon's Game - Memory Challenge",
-      description:
-        "JavaScript game that tests your memory through pattern recognition.",
-      image: simongame,
-      link: "https://github.com/KrishnaBabuLaveti/Simon-game",
-    },
-    {
       title: "Spotify Clone – Frontend Interface",
       description:
         "Responsive Spotify UI clone with sleek design and modern frontend stack.",
       image: spotify,
       link: "https://github.com/KrishnaBabuLaveti/Spotify-Clone",
+    },
+    {
+      title: "Educational Organisation Using ServiceNow",
+      description:
+        "A streamlined Educational Management System that automates admissions and efficiently manages student, teacher, and academic data.",
+      image: servicenow,
+      link: "https://github.com/KrishnaBabuLaveti/Educational-Organisation-Using-ServiceNow",
     },
     {
       title: "Movie Recommendation System",
@@ -48,12 +49,12 @@ const Card = () => {
       description:
         "An interactive Power BI dashboard analyzing Andhra Pradesh parliamentary election results by constituency, party, gender, and candidate assets.",
       image: powerBI,
-      link: "#",
+      // link: "#",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {projects.map((project, index) => (
         <motion.div
           key={index}
@@ -68,7 +69,7 @@ const Card = () => {
         >
           <a href={project.link} target="_blank" rel="noreferrer">
             <img
-              className="rounded-t-lg w-full h-48 object-cover"
+              className="rounded-t-lg w-full h-48 object-cover object-top"
               src={project.image}
               alt={`${project.title} Screenshot`}
             />

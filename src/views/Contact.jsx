@@ -120,14 +120,13 @@ const Contact = () => {
             </a>
 
             <h1 className="text-3xl font-bold">Address</h1>
-            <a
-              href="#"
+            <p
               className="mt-4 mb-12 md:text-right font-semibold text-blue-700 block uppercase"
             >
               Gadimudidam, Rajam
               <br />
               India
-            </a>
+            </p>
 
             <h1 className="text-3xl font-bold">Social</h1>
             <ul className="flex">
