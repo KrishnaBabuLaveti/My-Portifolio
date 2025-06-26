@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+import { TypeAnimation } from 'react-type-animation';
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -34,8 +34,8 @@ const Home = () => {
                 Hi, I am Krishna Babu Laveti
               </motion.span>
               <span className="block text-blue-500 z-0 text-sm sm:text-base md:text-2xl lg:text-3xl">
-  <Typical
-    steps={[
+  <TypeAnimation
+    sequence={[
       "MERN Stack Developer",
       1000,
       "ServiceNow CSA & CAD",
@@ -45,7 +45,9 @@ const Home = () => {
       "Machine Learning",
       1000,
     ]}
-    loop={Infinity}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
   />
 </span>
 
